@@ -8,7 +8,7 @@ export default function({ name, numberOfUsers, click }) {
     <div className="chat-header">
       <MdEllipsisMenu onClick={click} className="header-menu" />
       <div className="user-info">
-        <div className="user-name">{name.trim().toUpperCase()}</div>
+        <div className="user-name">{name.toUpperCase()}</div>
         <div className="status">
           <div className="indicator"></div>
           <span>{numberOfUsers ? numberOfUsers : null}</span>

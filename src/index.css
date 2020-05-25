@@ -114,22 +114,26 @@ textarea {
 #side-bar-hide {
   position: absolute;
   left: -100%;
-  transition: 0.8s ease;
+  transition: 0.8s ease-in;
 }
+
 #side-bar .heading {
   letter-spacing: 1px;
   opacity: 0.97;
   box-sizing: border-box;
-  height: 10vh;
-  max-height: 65px;
-  display: block;
+  height: 9vh;
+  max-height: 60px;
+  display: flex;
   font: 400;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2em;
-  background: var(--activeBrand);
-  color: var(--lightGrey);
+  font-size: 1.1em;
+  /* background: var(--activeBrand); */
+  border: solid 2px;
+  border-radius: 20px;
+  margin: 2px 2px;
+  color: var(--activeBrand);
   padding: 5px 5px 5px 5px;
 }
 #side-bar .search {
@@ -300,7 +304,7 @@ textarea {
 }
 
 .chat-header {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 400;
   color: var(--mainBrand);
   background: var(--chatHeader);
@@ -614,8 +618,8 @@ textarea {
   border-radius: 17px;
   text-align: center;
   align-content: center;
-  color: var(--mainWhite);
-  background: var(--lightDark);
+  color: var(--mainDark);
+  background: var(--lightActive);
   box-shadow: 0 2px 6px 0 var(--mainDark);
   transition: 0.3s;
 }
